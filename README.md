@@ -1,12 +1,4 @@
 # BankingLine 🦄
-
-- Spring boot
-- JPA
-- Spring Web
-- Postgres
-- Hibernate
-- 
-
 - O projeto será baseado na proposta de um Bankline para gestão de correntistas e movimentações de receitas e despesas com base na diagramação.
 - 
 http://localhost:8080/swagger-ui/index.html#/
