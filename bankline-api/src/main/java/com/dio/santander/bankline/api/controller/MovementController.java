@@ -28,6 +28,10 @@ public class MovementController {
 	public List<Movement> findAll() {
 		return repository.findAll();
 	}
+	@GetMapping("/{idConta}")
+	public List<Movimentacao> findAll(@PathVariable("idConta") Integer idConta){
+		return repository.findByIdConta(idConta);
+	}
 	@PostMapping
 	public void save(@RequestBody NewMovement movement) {
 		service.save(movement);
