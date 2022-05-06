@@ -28,9 +28,9 @@ public class MovementController {
 	public List<Movement> findAll() {
 		return repository.findAll();
 	}
-	@GetMapping("/{idConta}")
-	public List<Movimentacao> findAll(@PathVariable("idConta") Integer idConta){
-		return repository.findByIdConta(idConta);
+	@GetMapping("/{idAccount}")
+	public List<Movement> findAll(@PathVariable("idAccount") Integer idAccount){
+		return repository.findByIdAccount(idAccount);
 	}
 	@PostMapping
 	public void save(@RequestBody NewMovement movement) {
